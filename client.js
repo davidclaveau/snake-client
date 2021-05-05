@@ -9,7 +9,8 @@ const connect = () => {
   conn.setEncoding('utf8');
 
   conn.on("connect", (data) => {
-    console.log('Successfully connected to the server');
+    console.log('Successfully connected to the game server.');
+    conn.write('Name:  DAV');
   });
   
   conn.on("data", (message) => {
