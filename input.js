@@ -24,6 +24,16 @@ const setupInput = (conn) => {
     if (key === 'd') {
       connection.write('Move: right');
     }
+
+    if (key === 'h') {
+      connection.write('Say: Hello!');
+    }
+    if (key === 'g') {
+      connection.write('Say: Goodbye');
+    }
+    if (key === 't') {
+      connection.write('Say: IM GOIN FAST');
+    }
   };
 
   stdin.on('data', handleUserInput);
